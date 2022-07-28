@@ -29,7 +29,7 @@ public class TestModelController {
     TestModelRepository testModelRepository;
 
     @GetMapping("/findAll")
-    public ResponseEntity<List<TestModel>> getAllTerstModels() {
+    public ResponseEntity<List<TestModel>> getAllTestModels() {
         return new ResponseEntity<List<TestModel>>(testModelRepository.findAll(), HttpStatus.OK);
     }
 
